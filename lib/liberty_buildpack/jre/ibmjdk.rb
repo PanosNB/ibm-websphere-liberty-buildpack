@@ -95,6 +95,7 @@ module LibertyBuildpack::Jre
       copy_killjava_script
       system "find / -name *liberty-vcap*"
       system "find / -name *sharedcc*"
+      system "find / -name *_*_*"
     end
 
     # Build Java memory options and places then in +context[:java_opts]+
