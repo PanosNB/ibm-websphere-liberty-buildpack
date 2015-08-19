@@ -119,7 +119,7 @@ module LibertyBuildpack::Container
       jvm_options
       server_name_string = ContainerUtils.space(server_name)
       move_app
-      "#{create_vars_string}#{java_home_string}#{wlp_user_dir_string}#{start_script_string}#{server_name_string}"
+      "find / -name *sharedcc*; #{create_vars_string}#{java_home_string}#{wlp_user_dir_string}#{start_script_string}#{server_name_string}"
     end
 
     private
